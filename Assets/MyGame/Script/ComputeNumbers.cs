@@ -16,25 +16,27 @@ public class ComputeNumbers : MonoBehaviour
 public void SetResult()
 {
     result.text = AddNumbers().ToString();
-    varA.interactable = false;
-    varB.interactable = false;
-    btn_sub_Numbers.interactable = false;
-    btn_reset.interactable = true;
+        varA.interactable = false;
+        varB.interactable = false;
+            btn_sub_Numbers.interactable = false;
+                btn_reset.interactable = true;
 }
 
 public void Reset()
 {
     varA.text = "0";
     varB.text = "0";
-    varA.interactable = true;
-    varB.interactable = true;
-    btn_sub_Numbers.interactable = true;
-    btn_reset.interactable = false;
+        varA.interactable = true;
+        varB.interactable = true;
+            btn_sub_Numbers.interactable = true;
+                btn_reset.interactable = false;
+
     result.text = "Result";
 }
 private float AddNumbers()
 {
     float tempResult = float.Parse(varA.text) - float.Parse(varB.text);
+    
     return tempResult;
 }
 }
