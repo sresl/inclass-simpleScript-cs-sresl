@@ -12,6 +12,7 @@ public class ComputeNumbers : MonoBehaviour
 
     public Button btnReset;
     public Button btnResult;
+    private const string FinalResult = "Result";
 
 
 public void SetResult()
@@ -36,7 +37,7 @@ public void Reset()
            btnResult.interactable = true;
            btnReset.interactable = false;
 
-    result.text = "Result";
+    result.text = FinalResult;
 }
 
 private float AddNumbers()
