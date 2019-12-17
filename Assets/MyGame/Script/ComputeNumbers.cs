@@ -17,7 +17,7 @@ public class ComputeNumbers : MonoBehaviour
 
 public void SetResult()
 {
-    result.text = AddNumbers().ToString();
+    result.text = SubNumbers().ToString();
 
         leftNumber.interactable = false;
         rightNumber.interactable = false;
@@ -40,7 +40,7 @@ public void Reset()
     result.text = FinalResult;
 }
 
-private float AddNumbers()
+private float SubNumbers()
 {
     float tempResult = float.Parse(leftNumber.text) - float.Parse(rightNumber.text);
     
